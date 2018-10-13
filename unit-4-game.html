@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset = "utf-8"/>
+    <title>Crystals Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+   </head>
+
+<body background="assets/images/background.png">
+    <div class=container>
+        
+        <!--Header-->
+        <div class="row">
+            <div class="col-md-4 box1">
+                <h1>Crystals Collector!</h1>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+        
+        <br />
+
+        <!--Instructions Box-->
+        <div class="row">
+            <div class="col-md-6 box2">
+                <br />
+                You will be given a random number at the start of the game.
+                <br />
+                <br />
+                There are four cystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                <br />
+                <br />
+                You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+                <br />
+                <br />
+                The value of each crystal is hidden from you until you click on it.
+                <br />
+                <br />
+                Each time when the game starts, the game will change the values of each crystal.
+
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+
+        <br />
+
+        <!--Goal Score Box-->
+        <div class="row">
+            <div class="col-md-3 box3" id="goal">
+                0
+            </div>
+            <div class="col-md-1 box4">
+                <div id="wins">Wins: 0</div>
+                <br />
+                <div id="losses">Losses: 0</div>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+
+        <br />
+
+        <!--Jewels-->
+        <div class="row">
+            <div class="col-md-1 images">
+                <img id="jewel1" src="assets/images/jewel1.jpg" alt="jewel1" width="100px" height="100px">
+            </div>
+            <div class="col-md-1 images">
+                <img id="jewel2" src="assets/images/jewel2.jpg" alt="jewel1" width="100px" height="100px">
+            </div>
+            <div class="col-md-1 images">
+                <img id="jewel3" src="assets/images/jewel3.jpg" alt="jewel1" width="100px" height="100px">
+            </div>
+            <div class="col-md-1 images">
+                <img id="jewel4" src="assets/images/jewel4.jpg" alt="jewel1" width="100px" height="100px">
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+
+        <br />
+
+        <!--Total Score Text-->
+        <div class="row">
+            <div class="col-md-3 box5">
+                Your Total Score is: 
+            </div>
+            <div class="col-md-9"></div>
+        </div>
+
+        <br />
+
+        <!--Total Score-->
+        <div class="row">
+            <div class="col-md-3 box6" id="score">
+                0
+            </div>
+            <div class="col-md-9"></div>
+        </div>
+    </div>
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+
+</html>
